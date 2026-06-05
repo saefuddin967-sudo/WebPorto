@@ -1,0 +1,358 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Saepudin | Portfolio</title>
+
+    <!-- Bootstrap CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
+
+    <!-- Bootstrap Icons -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.css" rel="stylesheet">
+
+    <style>
+        body{
+            scroll-behavior:smooth;
+        }
+
+        .hero{
+            min-height:100vh;
+            background: linear-gradient(135deg,#0d6efd,#6610f2);
+            color:white;
+            display:flex;
+            align-items:center;
+        }
+
+        .profile-img{
+            width:300px;
+            height:300px;
+            object-fit:cover;
+            border-radius:50%;
+            border:8px solid white;
+            box-shadow:0 10px 25px rgba(0,0,0,.2);
+        }
+
+        .section-title{
+            font-weight:bold;
+            position:relative;
+            margin-bottom:40px;
+        }
+
+        .section-title::after{
+            content:'';
+            width:80px;
+            height:4px;
+            background:#0d6efd;
+            position:absolute;
+            bottom:-10px;
+            left:50%;
+            transform:translateX(-50%);
+        }
+
+        .skill-card{
+            transition:.3s;
+        }
+
+        .skill-card:hover{
+            transform:translateY(-10px);
+        }
+
+        .portfolio-card{
+            transition:.3s;
+        }
+
+        .portfolio-card:hover{
+            transform:scale(1.03);
+        }
+
+        footer{
+            background:#212529;
+            color:white;
+        }
+    </style>
+</head>
+<body>
+
+<!-- Navbar -->
+<nav class="navbar navbar-expand-lg navbar-dark bg-dark fixed-top shadow">
+    <div class="container">
+        <a class="navbar-brand fw-bold" href="#">Saepudin</a>
+
+        <button class="navbar-toggler"
+                type="button"
+                data-bs-toggle="collapse"
+                data-bs-target="#navbarNav">
+
+            <span class="navbar-toggler-icon"></span>
+        </button>
+
+        <div class="collapse navbar-collapse" id="navbarNav">
+            <ul class="navbar-nav ms-auto">
+                <li class="nav-item">
+                    <a class="nav-link" href="#home">Home</a>
+                </li>
+
+                <li class="nav-item">
+                    <a class="nav-link" href="#about">About</a>
+                </li>
+
+                <li class="nav-item">
+                    <a class="nav-link" href="#skills">Skills</a>
+                </li>
+
+                <li class="nav-item">
+                    <a class="nav-link" href="#galeri">Galeri</a>
+                </li>
+
+                <li class="nav-item">
+                    <a class="nav-link" href="#contact">Contact</a>
+                </li>
+            </ul>
+        </div>
+    </div>
+</nav>
+
+<!-- Hero -->
+<!-- Hero -->
+<section class="hero" id="home">
+    <div class="container">
+        <div class="row align-items-center">
+
+            <!-- Text Hero -->
+            <div class="col-lg-6 text-center text-lg-start">
+                <h1 class="display-3 fw-bold">
+                    Halo, Saya Saepudin
+                </h1>
+
+                <p class="lead my-4">
+                    Mahasiswa Sistem Informasi dan Web Developer yang
+                    berfokus pada pembuatan website modern,
+                    responsif, dan user friendly.
+                </p>
+
+                <a href="#galeri" class="btn btn-light btn-lg me-2">
+                    Lihat Galeri
+                </a>
+
+                <a href="#contact" class="btn btn-outline-light btn-lg">
+                    Hubungi Saya
+                </a>
+            </div>
+
+            <!-- Foto Profil -->
+            <div class="col-lg-6 text-center">
+                <img
+                    src="./Images/Profil.jpeg"
+                    alt="Foto Profil Saepudin"
+                    class="profile-img img-fluid">
+            </div>
+
+        </div>
+    </div>
+</section>
+
+<!-- About -->
+<section id="about" class="py-5">
+    <div class="container">
+
+        <h2 class="text-center section-title">
+            Tentang Saya
+        </h2>
+
+        <div class="row">
+            <div class="col-lg-8 mx-auto text-center">
+
+                <p class="fs-5">
+                    Saya adalah mahasiswa Sistem Informasi Universitas
+                    Pamulang yang memiliki minat dalam bidang
+                    Web Development, UI/UX Design, dan Teknologi
+                    Informasi.
+                </p>
+
+            </div>
+        </div>
+
+    </div>
+</section>
+
+<!-- Skills -->
+<section id="skills" class="py-5 bg-light">
+    <div class="container">
+
+        <h2 class="text-center section-title">
+            Skills
+        </h2>
+
+        <div class="row g-4">
+
+            <div class="col-md-3">
+                <div class="card skill-card shadow-sm text-center p-4">
+                    <i class="bi bi-filetype-html display-4 text-danger"></i>
+                    <h5 class="mt-3">HTML5</h5>
+                </div>
+            </div>
+
+            <div class="col-md-3">
+                <div class="card skill-card shadow-sm text-center p-4">
+                    <i class="bi bi-filetype-css display-4 text-primary"></i>
+                    <h5 class="mt-3">CSS3</h5>
+                </div>
+            </div>
+
+            <div class="col-md-3">
+                <div class="card skill-card shadow-sm text-center p-4">
+                    <i class="bi bi-bootstrap-fill display-4 text-purple"></i>
+                    <h5 class="mt-3">Bootstrap</h5>
+                </div>
+            </div>
+
+            <div class="col-md-3">
+                <div class="card skill-card shadow-sm text-center p-4">
+                    <i class="bi bi-filetype-js display-4 text-warning"></i>
+                    <h5 class="mt-3">JavaScript</h5>
+                </div>
+            </div>
+
+        </div>
+
+    </div>
+</section>
+
+<!-- Galeri-->
+<section id="galeri" class="py-5">
+    <div class="container">
+
+        <h2 class="text-center section-title">
+            Galeri saya
+        </h2>
+
+        <div class="row g-4">
+
+            <div class="col-md-4">
+                <div class="card portfolio-card shadow">
+                    <img src="Images/Moment1.jpg" class="card-img-top" alt="Moment 1">
+                </div>
+            </div>
+
+            <div class="col-md-4">
+                <div class="card portfolio-card shadow">
+                    <img src="Images/Moment2.jpg" class="card-img-top" alt="Moment 2">
+                </div>
+            </div>
+
+            <div class="col-md-4">
+                <div class="card portfolio-card shadow">
+                    <img src="Images/Moment3.jpg" class="card-img-top" alt="Moment 3">
+                </div>
+            </div>
+
+            <div class="col-md-4">
+                <div class="card portfolio-card shadow">
+                    <img src="Images/Moment4.jpg" class="card-img-top" alt="Moment 4">
+                </div>
+            </div>
+
+            <div class="col-md-4">
+                <div class="card portfolio-card shadow">
+                    <img src="Images/Moment9.jpg" class="card-img-top" alt="Moment 5">
+                </div>
+            </div>
+
+            <div class="col-md-4">
+                <div class="card portfolio-card shadow">
+                    <img src="Images/Moment6.jpg" class="card-img-top" alt="Moment 6">
+                </div>
+            </div>
+
+            <div class="col-md-4 mx-auto">
+                <div class="card portfolio-card shadow">
+                    <img src="Images/Moment7.jpg" class="card-img-top" alt="Moment 7">
+                </div>
+            </div>
+
+        </div>
+
+    </div>
+</section>
+<!-- Contact -->
+<!-- Contact -->
+<section id="contact">
+    <div class="container">
+
+        <h2 class="text-center section-title">
+            Contact Me
+        </h2>
+
+        <div class="row justify-content-center">
+
+            <div class="col-md-8 col-lg-6">
+
+                <div class="card shadow border-0">
+                    <div class="card-body p-4">
+
+                        <form>
+
+                            <div class="mb-3">
+                                <label for="name" class="form-label">
+                                    Nama Lengkap
+                                </label>
+
+                                <input
+                                    type="text"
+                                    class="form-control"
+                                    id="name"
+                                    placeholder="Masukkan nama lengkap">
+                            </div>
+
+                            <div class="mb-3">
+                                <label for="email" class="form-label">
+                                    Email
+                                </label>
+
+                                <input
+                                    type="email"
+                                    class="form-control"
+                                    id="email"
+                                    placeholder="Masukkan email">
+                            </div>
+
+                            <div class="mb-3">
+                                <label for="pesan" class="form-label">
+                                    Pesan
+                                </label>
+
+                                <textarea
+                                    class="form-control"
+                                    id="pesan"
+                                    rows="5"
+                                    placeholder="Tulis pesan Anda"></textarea>
+                            </div>
+
+                            <button
+                                type="submit"
+                                class="btn btn-primary w-100">
+                                Kirim Pesan
+                            </button>
+
+                        </form>
+
+                    </div>
+                </div>
+
+            </div>
+
+        </div>
+
+    </div>
+</section>
+<!-- Footer -->
+<footer class="bg-dark text-white text-center py-4">
+    <p class="mb-0">
+        © 2026 Created by
+        <a href="https://www.instagram.com/efdinn_?igsh=MWV1cWJlZWFhamN1bw=="
+           class="text-white fw-bold text-decoration-none">
+           Saepudin
+        </a>
+    </p>
+</footer>
